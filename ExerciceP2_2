@@ -1,0 +1,1 @@
+SELECT * FROM emp WHERE HIREDATE LIKE "1981%" AND  JOB <> 'manager';

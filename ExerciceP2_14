@@ -1,0 +1,1 @@
+SELECT ENAME, TIMESTAMPDIFF(YEAR, HIREDATE, CURDATE()) AS temps_ecoule_embauche FROM emp;

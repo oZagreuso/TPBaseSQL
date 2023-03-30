@@ -1,0 +1,3 @@
+SELECT DNAME AS departement, JOB, SUM(emp.SAL) + SUM(IFNULL(emp.COMM,0)) AS masse_salariale, avg(SAL) AS salaire_moyen, COUNT(*) AS nombre_employes
+FROM dept INNER JOIN  emp ON dept.DEPTNO = emp.DEPTNO
+GROUP BY DNAME, JOB;

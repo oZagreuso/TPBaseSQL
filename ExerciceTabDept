@@ -1,0 +1,5 @@
+CREATE TABLE dept
+						(DEPTNO INT NOT NULL PRIMARY key,
+						DNAME VARCHAR(50),
+						LOC VARCHAR(50))
+						employes

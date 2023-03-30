@@ -1,0 +1,3 @@
+SELECT e.ENAME, e.HIREDATE, m.ENAME AS nom_manager, m.HIREDATE AS date_embauche_manager 
+FROM emp e,emp m 
+WHERE e.MGR = m.EMPNO AND e.HIREDATE<m.HIREDATE;

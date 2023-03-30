@@ -1,0 +1,2 @@
+SELECT dept.DNAME FROM dept JOIN emp ON dept.DEPTNO = emp.DEPTNO 
+WHERE emp.ENAME = 'ALLEN';

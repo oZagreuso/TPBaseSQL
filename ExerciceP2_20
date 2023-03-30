@@ -1,0 +1,1 @@
+select emp.deptno, ROUND( COUNT(*) * 100 / (select COUNT(*) from emp),2) AS 'repartition d\'employé en pourcentage' from emp group by emp.deptno;

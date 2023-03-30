@@ -1,0 +1,2 @@
+SELECT * FROM emp INNER JOIN dept ON emp.DEPTNO = dept.DEPTNO 
+WHERE dept.LOC = "dallas";

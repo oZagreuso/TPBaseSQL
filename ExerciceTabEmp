@@ -1,0 +1,13 @@
+CREATE TABLE emp 
+							(EMPNO INT NOT NULL PRIMARY KEY,
+							ENAME VARCHAR(15),
+							JOB VARCHAR(15),
+							MGR INT,
+							HIREDATE DATE,
+							SAL DECIMAL(11,2) NOT NULL,
+							COMM DECIMAL(11,2),
+							DEPTNO INT NOT NULL, 
+							FOREIGN KEY (DEPTNO) REFERENCES Dept(DEPTNO));
+							
+							
+				

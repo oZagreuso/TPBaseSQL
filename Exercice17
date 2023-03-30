@@ -1,0 +1,3 @@
+SELECT ENAME, SAL, (SELECT AVG(SAL) FROM emp ) AS salaire_median
+FROM emp
+WHERE SAL > (SELECT AVG(SAL) FROM emp );

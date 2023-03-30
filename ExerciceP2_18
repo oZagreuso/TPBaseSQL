@@ -1,0 +1,9 @@
+SELECT JOB, AVG(SAL) AS "Salaire moyen" FROM emp  
+GROUP BY JOB HAVING AVG(SAL) = (SELECT MIN(AVG(SAL)) FROM emp GROUP BY JOB);
+
+/*. Sélectionner le métier où le salaire moyen est le plus faible*/
+
+/*SELECT JOB,AVG(SAL) AS 'salaire moyen' FROM emp GROUP BY JOB ORDER BY 'salaire moyen' ASC LIMIT 1*/
+
+/* langage sql server*/
+/*SELECT JOB,AVG(SAL) FROM emp WHERE AVG(SAL) <= ALL(SELECT AVG(SAL) FROM emp GROUP BY JOB) GROUP BY JOB*/

@@ -1,0 +1,2 @@
+SELECT * FROM emp
+WHERE SAL between 1200 and 1400
